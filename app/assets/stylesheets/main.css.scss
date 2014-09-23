@@ -114,4 +114,19 @@ section#orderForm {
   z-index: 1;
 }
 
+section.intro {
+  font-size: 0.8em;
+  background-color: #BFDDA0;
+  color: #513686;
+  padding: 0.5em 5% 1em 10%;
+}
+
+section.examples {
+  figure {
+    text-align: center;
+    img {
+      width: 30%;
+    }
+  }
+}
 
