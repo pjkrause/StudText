@@ -1,2 +1,34 @@
-<h1>Main#order</h1>
-<p>Find me in app/views/main/order.html.erb</p>
+<section id="orderForm">
+<h1>How can I help you?</h1>
+<p>
+  We will be setting up an online payment service soon. In the meantime
+  please use this form to send me details of what you are interested in and I will 
+  contact you by return.
+</p>
+<form>
+  <fieldset>
+    <legend>Contact Sarah</legend>
+    <ul>
+      <li>
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" id="name" placeholder="Required" value="" required></input>
+      </li>
+      <li>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Required" value="" required></input>
+      </li>
+      <li>
+        <label for="phone">Phone number:</label>
+        <input type="text" name="phone" id="phone" value="" placeholder="Optional"></input>
+      </li>
+      <li>
+        <label for="details">Details:</label>
+        <textarea name="details" id="details" value="" required></textarea>
+      </li>
+      <li>
+        <input type="submit" value="Submit your request">
+      </li>
+    </ul>
+  </fieldset>
+</form>
+</section>

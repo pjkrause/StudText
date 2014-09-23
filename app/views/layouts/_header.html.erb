@@ -3,7 +3,19 @@
   <nav>
     <ul>
       <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "Products", products_path %></li>
+      <li class="dropdown_item">Products</li>
+      <section class="dropdown_list">
+        <p><%= link_to "A5 Cards", a5_cards_path %></p>
+        <p><%= link_to "Birthday Cards", birthday_cards_path %></p>
+        <p><%= link_to "Cards for Other Occasions", occasions_path %></p>
+        <p><%= link_to "Christmas Decorations", christmas_path %></p>
+        <p><%= link_to "Large Square Cushions", large_cushions_path %></p>
+        <p><%= link_to "Rectangular Cushions", rectangular_cushions_path %></p>
+        <p><%= link_to "Small Square Cushions", small_cushions_path %></p>
+        <p><%= link_to "Tooth Fairy Range", tooth_fairy_path %></p>
+        <p><%= link_to "One-off Commissions", one_offs_path %></p>
+      </section>
+    
       <li><%= link_to "How To Order", order_path %></li>
       <li><%= link_to "About Us", about_path %></li>
     </ul>

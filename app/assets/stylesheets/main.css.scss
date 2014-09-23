@@ -79,4 +79,39 @@ section#MainImage {
   height: 500px;
 }
 
+section#orderForm {
+  color: #513686;
+  background-color: #FFCE85;
+  padding: 1em;
+
+  form {
+    width: 75%;
+  }
+
+  ul {
+    li {
+      padding-bottom: 1em;
+      list-style: none;
+      input {
+        display: block;
+      }
+      textarea {
+        display: block;
+        width: 75%;
+        height: 10em;
+      }
+    }
+  }
+}
+
+.dropdown_list {
+  margin-left: 25%;
+  width: 20%;
+  background-color: #FFF;
+  font-size: 0.75em;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
 

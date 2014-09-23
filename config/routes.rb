@@ -1,7 +1,15 @@
 SarahStudholmeTextiles::Application.routes.draw do
 
   match "/index" => "main#index", via: :get
-  match "/products" => "main#products", via: :get
+  match "/a5_cards" => "main#a5_cards", via: :get
+  match "/birthday_cards" => "main#birthday_cards", via: :get
+  match "/occasions" => "main#occasions", via: :get
+  match "/christmas" => "main#christmas", via: :get
+  match "/large_cushions" => "main#large_cushions", via: :get
+  match "/rectangular_cushions" => "main#rectangular_cushions", via: :get
+  match "/small_cushions" => "main#small_cushions", via: :get
+  match "/tooth_fairy" => "main#tooth_fairy", via: :get
+  match "/one_offs" => "main#one_offs", via: :get
   match "/order" => "main#order", via: :get  
   match "/about" => "main#about", via: :get
 
