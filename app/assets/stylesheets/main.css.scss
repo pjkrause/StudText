@@ -122,10 +122,44 @@ section.intro {
 }
 
 section.examples {
+  table {
+    width: 100%;
+  }
+  tr {
+
+  }
+  td {
+
+  }
   figure {
+    margin-top: 1em;
     text-align: center;
     img {
-      width: 30%;
+      height: 150px;
+    }
+    figcaption {
+      text-align: left;
+      display: block;
+      background-color: #FFDB94;
+      color: #513686;
+      padding: 0.2em 0 0.2em 10%;
+    }
+    figcaption.second {
+      background-color: #FFCCFF;
+    }
+    figcaption.third {
+      background-color: #FFFFB4;
+    }
+  }
+  tr.second_row {
+    figcaption {
+      background-color: #FFFFB4;
+    }
+    figcaption.second {
+      background-color: #FFDB94;
+    }
+    figcaption.third {
+      background-color: #FFCCFF;
     }
   }
 }
