@@ -112,6 +112,10 @@ section#orderForm {
   display: none;
   position: absolute;
   z-index: 1;
+  p {
+    padding-left: 1em;
+    text-align: left;
+  }
 }
 
 section.intro {
