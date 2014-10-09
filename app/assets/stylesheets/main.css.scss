@@ -8,7 +8,8 @@ body {
 }
 
 article#main {
-  background-color: white;
+  // background-color: white;
+  background-image: url('Woven background.jpg');
   margin-left: auto;
   margin-right: auto;
   width: 960px;
@@ -55,7 +56,8 @@ section#Subtitle {
   float: left;
   color: #513686;
   font-size: 0.75em;
-  background-color: #FFCE85;
+  // background-color: #FFCE85;
+  background-color: #E0D1FF;
   h1 {
       padding-left: 0.5em;
   }
@@ -126,6 +128,7 @@ section.intro {
 }
 
 section.examples {
+  background-color: white;
   table {
     width: 100%;
   }
@@ -144,26 +147,27 @@ section.examples {
     figcaption {
       text-align: left;
       display: block;
-      background-color: #FFDB94;
+      // background-color: #FFDB94;
+      background-color: #E0D1FF;
       color: #513686;
       padding: 0.2em 0 0.2em 10%;
     }
     figcaption.second {
-      background-color: #FFCCFF;
+      // background-color: #FFCCFF;
     }
     figcaption.third {
-      background-color: #FFFFB4;
+      // background-color: #FFFFB4;
     }
   }
   tr.second_row {
     figcaption {
-      background-color: #FFFFB4;
+      // background-color: #FFFFB4;
     }
     figcaption.second {
-      background-color: #FFDB94;
+      // background-color: #FFDB94;
     }
     figcaption.third {
-      background-color: #FFCCFF;
+      // background-color: #FFCCFF;
     }
   }
 }
