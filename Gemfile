@@ -24,6 +24,13 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
 
+# Use CarrierWave to handle file uploads
+gem 'carrierwave'
+
+# And use MiniMagick to resize images on upload
+gem 'mini_magick'
+
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 

@@ -9,7 +9,6 @@ body {
 }
 
 article#main {
-  // background-color: white;
   background-image: url(image_path('mint-green-polka-dots-2284.png'));
   margin-left: auto;
   margin-right: auto;
@@ -58,7 +57,6 @@ section#Subtitle {
   float: left;
   color: #513686;
   font-size: 0.75em;
-  // background-color: #FFCE85;
   background-color: #FFF;
   h1 {
       padding-left: 0.5em;
@@ -176,9 +174,32 @@ section.examples {
       // background-color: #FFCCFF;
     }
   }
+  figure.uploaded {
+    float: left;
+    width: 33%;
+    img {
+      text-align: center;
+    }
+    figcaption {
+      padding-left: 0;
+      text-align: center;
+      background-color: transparent;
+      p {
+        margin: 0;
+      }
+    }
+  }
+  footer {
+    clear: left;
+    padding: 0;
+    min-height: 10px;
+    width: 100%;
+  }  
+
 }
 
-footer {
+footer#overall_footer {
+  clear: left;
   color: #513686;
   padding-top: 0.5em;
   padding-bottom: 0.5em;

@@ -13,11 +13,23 @@
 
 <section class="examples">
   <% @display_items.each do |item| %>
-  <hgroup>
-    <h2><%= item.name%></h2>
-    <h3><%= item.code%> | <%= item.price%></h3>
-  </hgroup>
+  <figure class="uploaded">
+    <%= link_to(item.image_url) do %>
+      <%= image_tag(item.image_url(:thumb)) %>
+    <% end %>
+    <figcaption>
+      <p><%= item.name %></p>
+      <p>
+        <% if item.price.nil? %>
+          <%= item.code %>
+        <% else %>
+          <%= item.code %> | <%= number_to_currency(item.price, unit: "£") %>
+        <% end %>
+      </p>
+    </figcaption>
+  </figure>
   <% end %>
+  <footer></footer>
 </section>
 
 <!--  <table>
