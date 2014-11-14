@@ -12,7 +12,15 @@
 </section>
 
 <section class="examples">
-  <table>
+  <% @display_items.each do |item| %>
+  <hgroup>
+    <h2><%= item.name%></h2>
+    <h3><%= item.code%> | <%= item.price%></h3>
+  </hgroup>
+  <% end %>
+</section>
+
+<!--  <table>
     <tbody>
       <tr>
         <td>
@@ -56,4 +64,4 @@
       </tr>
     </tbody>
   </table>
-</section>
+-->

@@ -12,6 +12,7 @@ class MainController < ApplicationController
   end
 
   def christmas
+    @display_items = SalesItem.where(category: "christmas")
   end
 
   def large_cushions
