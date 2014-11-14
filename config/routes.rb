@@ -1,5 +1,7 @@
 SarahStudholmeTextiles::Application.routes.draw do
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   match "/index" => "main#index", via: :get
   match "/a5_cards" => "main#a5_cards", via: :get
   match "/birthday_cards" => "main#birthday_cards", via: :get
