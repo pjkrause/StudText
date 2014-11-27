@@ -9,48 +9,335 @@
 </section>
 
 <section class="examples">
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          <figure>
-            <%= image_tag("birthday_cards/Birthday Alliums - BA01.jpg") %>
-            <figcaption>Birthday Alliums </br> BA01 £5.00</figcaption>
-          </figure>
-        </td>
-        <td>
-          <figure>
-            <%= image_tag("birthday_cards/Birthday Bear Blue and Green - BBBG01.jpg") %>
-            <figcaption class="second">Birthday Bear Blue & Green </br> BBBG01 £5.00</figcaption>
-          </figure>
-        </td>
-        <td>
-          <figure>
-            <%= image_tag("birthday_cards/Birthday Bear Green with Bow - BBGWB01.jpg") %>
-            <figcaption class="third">Birthday Bear Green with Bow </br> BBGWB01 £5.00</figcaption>
-          </figure>
-        </td>
-      </tr>
-      <tr class="second_row">
-        <td>
-          <figure>
-            <%= image_tag("birthday_cards/Birthday Bear Orange and Green - BBOG01.jpg") %>
-            <figcaption>Birthday Bear Orange & Green </br> BBOG01 £5.00</figcaption>
-          </figure>
-        </td>
-        <td>
-          <figure>
-            <%= image_tag("birthday_cards/Birthday Fairy 1 - BF01.jpg") %>
-            <figcaption class="second">Birthday Fairy 1 </br> BF01 £5.00</figcaption>
-          </figure>
-        </td>
-        <td>
-          <figure>
-            <%= image_tag("birthday_cards/Birthday Fairy 2 with name and age - BFNA02.jpg") %>
-            <figcaption class="third">Birthday Fairy 2 with name & age </br> BFNA02 £5.00</figcaption>
-          </figure>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <figure class="uploaded">
+    <%= link_to("assets/3/Birthday_Alliums_-_BA01.jpg") do %>
+      <%= image_tag("3/thumb_Birthday_Alliums_-_BA01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Birthday Alliums</p>
+      <p>
+        BA01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/4/Birthday_Bear_Blue_and_Green_-_BBBG01.jpg") do %>
+      <%= image_tag("4/Birthday_Bear_Blue_and_Green_-_BBBG01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Birthday Bear: Blue & Green</p>
+      <p>
+        BBBG01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/5/Birthday_Bear_Green_with_Bow_-_BBGWB01.jpg") do %>
+      <%= image_tag("5/thumb_Birthday_Bear_Green_with_Bow_-_BBGWB01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Birthday Bear: Green with Bow</p>
+      <p>
+        BBGWB01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/6/Birthday_Bear_Orange_and_Green_-_BBOG01.jpg") do %>
+      <%= image_tag("6/thumb_Birthday_Bear_Orange_and_Green_-_BBOG01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Birthday Bear: Orange & Green</p>
+      <p>
+        BBOG01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/7/Birthday_Fairy_1_-_BF01.jpg") do %>
+      <%= image_tag("7/thumb_Birthday_Fairy_1_-_BF01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Birthday Fairy 1</p>
+      <p>
+        BF01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/8/Birthday_Fairy_2_with_name_and_age_-_BFNA02.jpg") do %>
+      <%= image_tag("8/thumb_Birthday_Fairy_2_with_name_and_age_-_BFNA02.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Birthday Fairy 2 with name and age</p>
+      <p>
+        BFNA02 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/9/3D_Birthday_Giraffe_-_BG01.jpg") do %>
+      <%= image_tag("9/thumb_Birthday_Giraffe_-_BG01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>3D Birthday Giraffe</p>
+      <p>
+        BG01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/10/Birthday_Girl_Penguin_-_BGP01.jpg") do %>
+      <%= image_tag("10/thumb_Birthday_Girl_Penguin_-_BGP01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Birthday Girl Penguin</p>
+      <p>
+        BGP01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/11/Boy_Racer_-_BR01.jpg") do %>
+      <%= image_tag("11/thumb_Boy_Racer_-_BR01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>3Boy Racer</p>
+      <p>
+        BR01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/12/Butterfly_1_-_BF01.jpg") do %>
+      <%= image_tag("12/thumb_Butterfly_1_-_BF01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Butterfly 1</p>
+      <p>
+        BF01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/13/Cocktail_Birthday_-_CKB01.jpg") do %>
+      <%= image_tag("13/thumb_Cocktail_Birthday_-_CKB01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Cocktail Birthday</p>
+      <p>
+        BKB01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/14/Cornflower_Birthday_-_CFB01.jpg") do %>
+      <%= image_tag("14/thumb_Cornflower_Birthday_-_CFB01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Cornflower Birthday</p>
+      <p>
+        BFB01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/15/Cupcake_Birthday_-_CCB01.jpg") do %>
+      <%= image_tag("15/thumb_Cupcake_Birthday_-_CCB01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Cupcake Birthday</p>
+      <p>
+        CCB01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/16/German_Pointer_-_GP01.jpg") do %>
+      <%= image_tag("16/thumb_German_Pointer_-_GP01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>German_Pointer</p>
+      <p>
+        GP01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/17/Male_Blue_40_-_MB4001.jpg") do %>
+      <%= image_tag("17/thumb_Male_Blue_40_-_MB4001.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Male Blue 40</p>
+      <p>
+        MB4001 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/18/Number_Kite_-_NK01.jpg") do %>
+      <%= image_tag("18/thumb_Number_Kite_-_NK01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Number Kite</p>
+      <p>
+        NK01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/19/Number_with_beading_-_NB01.jpg") do %>
+      <%= image_tag("19/thumb_Number_with_beading_-_NB01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Number with beading</p>
+      <p>
+        NB01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/20/Number_with_Stars_-_NWS01.jpg") do %>
+      <%= image_tag("20/thumb_Number_with_Stars_-_NWS01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Number with Stars</p>
+      <p>
+        NWS01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/21/Number_with_stitching_-_NS01.jpg") do %>
+      <%= image_tag("21/thumb_Number_with_stitching_-_NS01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Number with stitching</p>
+      <p>
+        NS01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/22/Pink_Flowers_-_PF01.jpg") do %>
+      <%= image_tag("22/thumb_Pink_Flowers_-_PF01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Pink Flowers</p>
+      <p>
+        PF01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/23/Sailing_Birthday_-_SB01.jpg") do %>
+      <%= image_tag("23/thumb_Sailing_Birthday_-_SB01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Sailing Birthday</p>
+      <p>
+        SB01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/24/Sailing_Birthday_2_-_SB02.jpg") do %>
+      <%= image_tag("24/thumb_Sailing_Birthday_2_-_SB02.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Sailing Birthday 2</p>
+      <p>
+        SB02 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/25/Horse_Birthday_HB01.jpg") do %>
+      <%= image_tag("25/thumb_Horse_Birthday_HB01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Horse Birthday</p>
+      <p>
+        HB01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/26/Cupcake_Number_Birthday_CCNB02.jpg") do %>
+      <%= image_tag("26/thumb_Cupcake_Number_Birthday_CCNB02.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Cupcake Number Birthday: Green</p>
+      <p>
+        CCNB02 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/27/Cupcake_Number_Birthday_CCNB03.jpg") do %>
+      <%= image_tag("27/thumb_Cupcake_Number_Birthday_CCNB03.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Cupcake Number Birthday: Lilac</p>
+      <p>
+        CCNB03 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/28/Cupcake_Number_Birthday_CCNB04.jpg") do %>
+      <%= image_tag("28/thumb_Cupcake_Number_Birthday_CCNB04.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Cupcake Number Birthday: Orange</p>
+      <p>
+        CCNB04 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/29/Cupcake_Number_Birthday_CCNB05.jpg") do %>
+      <%= image_tag("29/thumb_Cupcake_Number_Birthday_CCNB05.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Cupcake Number Birthday: Pink</p>
+      <p>
+        CCNB05 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/30/Cycle_Birthday_-_CYB01.jpg") do %>
+      <%= image_tag("30/thumb_Cycle_Birthday_-_CYB01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Cycle Birthday</p>
+      <p>
+        CYB01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/31/Princess_Birthday_-_PRB01.jpg") do %>
+      <%= image_tag("31/thumb_Princess_Birthday_-_PRB01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Princess Birthday</p>
+      <p>
+        PRB01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <figure class="uploaded">
+    <%= link_to("assets/32/Tractor_Birthday_-_TRB01.jpg") do %>
+      <%= image_tag("32/thumb_Tractor_Birthday_-_TRB01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Tractor Birthday</p>
+      <p>
+        TRB01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  <footer></footer>
 </section>

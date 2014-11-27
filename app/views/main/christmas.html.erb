@@ -12,6 +12,7 @@
 </section>
 
 <section class="examples">
+  <!--
   <% @display_items.each do |item| %>
   <figure class="uploaded">
     <%= link_to(item.image_url) do %>
@@ -29,6 +30,18 @@
     </figcaption>
   </figure>
   <% end %>
+-->
+  <figure class="uploaded">
+    <%= link_to("assets/1/3D_Bauble_Lime_and_Pink_-_B3D01.jpg") do %>
+      <%= image_tag("1/thumb_3D_Bauble_Lime_and_Pink_-_B3D01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>3D Bauble Lime & Pink</p>
+      <p>
+        B3D01 | <%= number_to_currency(8, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
   <footer></footer>
 </section>
 
