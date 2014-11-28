@@ -63,13 +63,13 @@ section#Subtitle {
   }
   img#LeftImage {
     float: left;
-    width: 50%;
+    width: 40%;
     height: 319px;
     overflow: hidden;
   }
   img#RightImage {
     float: right;
-    width: 50%;
+    width: 60%;
     height: 319px;
     overflow: hidden;
   }
@@ -149,12 +149,12 @@ section.examples {
       height: 150px;
     }
     figcaption {
-      text-align: left;
+      text-align: center;
       display: block;
       // background-color: #FFDB94;
-      background-color: #FFF;
+      // background-color: #FFF;
       color: #513686;
-      padding: 0.2em 0 0.2em 10%;
+      // padding: 0.2em 0 0.2em 10%;
     }
     figcaption.second {
       // background-color: #FFCCFF;
