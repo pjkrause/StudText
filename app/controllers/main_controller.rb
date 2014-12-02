@@ -30,7 +30,8 @@ class MainController < ApplicationController
   def one_offs
   end
 
-  def order
+  def show_order
+    @order = Order.find(params[:order_id])
   end
 
   def about

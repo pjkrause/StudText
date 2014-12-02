@@ -1,0 +1,24 @@
+<section id="orderForm">
+<p id="notice"><%= notice %></p>
+
+<p>
+  Thank you for your order <%= @order.name %>.
+</p>
+<p> 
+  You will shortly receive a confirmation e-mail, which will be sent to: 
+  <%= @order.email %>.
+</p>
+<p>
+  The details that we have noted are:
+</p>
+<p>
+  <%= @order.details %>
+</p>
+<p>
+  If you wish to correct any of this information please e-mail me at
+  <a href="mailto:sarahstudholmetextiles@gmail.com">
+    sarahstudholmetextiles@gmail.com</a>
+  and I will contact you by return. 
+</p>
+
+</section>

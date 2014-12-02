@@ -1,5 +1,7 @@
 SarahStudholmeTextiles::Application.routes.draw do
 
+  resources :orders
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   match "/index" => "main#index", via: :get
@@ -12,7 +14,7 @@ SarahStudholmeTextiles::Application.routes.draw do
   match "/small_cushions" => "main#small_cushions", via: :get
   match "/tooth_fairy" => "main#tooth_fairy", via: :get
   match "/one_offs" => "main#one_offs", via: :get
-  match "/order" => "main#order", via: :get  
+  match "/show_order" => "main#show_order", via: :get  
   match "/about" => "main#about", via: :get
 
   # The priority is based upon order of creation: first created -> highest priority.

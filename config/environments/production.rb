@@ -66,6 +66,15 @@ SarahStudholmeTextiles::Application.configure do
   config.action_mailer.raise_delivery_errors = true
   # Use smtp for delivery
   config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = { 
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: "http://sarahstudholmetextiles.com", 
+    authentication: "plain",
+    user_name: "paul.j.krause@gmail.com", 
+    password: "hongying", 
+    enable_starttls_auto: true
+  }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found).

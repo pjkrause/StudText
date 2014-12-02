@@ -1,0 +1,48 @@
+<section id="orderForm">
+<h1>How can I help you?</h1>
+<p>
+  We will be setting up an online payment service soon. Until then please
+  use the form below to send me details of what you are interested in, or e-mail me at
+  <a href="mailto:sarahstudholmetextiles@gmail.com">
+    sarahstudholmetextiles@gmail.com</a>
+  and I will contact you by return. 
+</p>
+<%= form_for(@order) do |f| %>
+  <fieldset>
+    <legend>Contact Sarah</legend>
+    <% if @order.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@order.errors.count, "error") %> 
+          prohibited this order from being saved:</h2>
+
+        <ul>
+          <% @order.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <ul>
+      <li class="field">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+      </li>
+      <li class="field">
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+      </li>
+      <li class="field">
+        <%= f.label :phone %><br>
+        <%= f.text_field :phone %>
+      </li>
+      <li class="field">
+        <%= f.label :details %><br>
+        <%= f.text_area :details %>
+      </li>
+      <li>
+        <input type="submit" class="actions" value="Submit your request">
+      </li>
+    </ul>
+  </fieldset>
+<% end %>
+</section>
