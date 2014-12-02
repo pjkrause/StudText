@@ -10,6 +10,6 @@ class OrderNotifier < ActionMailer::Base
   def received(order)
     @order = order
 
-    mail to: "paul_krause56@mac.com"
+    mail to: "Sarah Studholme <sarahjstudholme@hotmail.co.uk>", cc: "paul_krause56@mac.com"
   end
 end
