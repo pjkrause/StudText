@@ -13,48 +13,127 @@
 </section>
 
 <section class="examples">
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          <figure>
-            <%= image_tag("rectangular_cushions/Wedding Cushion - WCN01.jpg") %>
-            <figcaption>Wedding Cushion </br> WCN01 £50.00</figcaption>
-          </figure>
-        </td>
-        <td>
-          <figure>
-            <%= image_tag("rectangular_cushions/Wedding Cushion - WCN02.jpg") %>
-            <figcaption class="second">Wedding Cushion </br> WCN02 £50.00</figcaption>
-          </figure>
-        </td>
-        <td>
-          <figure>
-            <%= image_tag("rectangular_cushions/Wedding Cushion - WCN03.jpg") %>
-            <figcaption class="third">Wedding Cushion </br> WCN03 £50.00</figcaption>
-          </figure>
-        </td>
-      </tr>
-      <tr class="second_row">
-        <td>
-          <figure>
-            <%= image_tag("rectangular_cushions/Wedding Cushion Reverse - WCNR03.jpg") %>
-            <figcaption>Wedding Cushion - Personal text </br> can be added to the reverse</figcaption>
-          </figure>
-        </td>
-        <td>
-          <figure>
-            <%= image_tag("rectangular_cushions/Baby Boy Cushion - BBCN01.jpg") %>
-            <figcaption class="second">Baby Boy Cushion </br> BBCN01 £50.00 </figcaption>
-          </figure>
-        </td>
-        <td>
-          <figure>
-            <%= image_tag("rectangular_cushions/Baby Girl Cushion - BGCN01.jpg") %>
-            <figcaption class="third">Baby Girl Cushion </br> BGCN01 £50.00</figcaption>
-          </figure>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+
+  <figure class="uploaded">
+    <%= link_to(image_path("113/Wedding_Cushion_-_WCN02.jpg")) do %>
+      <%= image_tag("113/thumb_Wedding_Cushion_-_WCN02.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Wedding Cushion</p>
+      <p>
+        WCN02 | <%= number_to_currency(50, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure class="uploaded">
+    <%= link_to(image_path("114/Wedding_Cushion_-_WCN03.jpg")) do %>
+      <%= image_tag("114/thumb_Wedding_Cushion_-_WCN03.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Wedding Cushion</p>
+      <p>
+        WCN03 | <%= number_to_currency(50, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure class="uploaded">
+    <%= link_to(image_path("115/Wedding_Cushion_Reverse_-_WCNR03.jpg")) do %>
+      <%= image_tag("115/thumb_Wedding_Cushion_Reverse_-_WCNR03.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Wedding Cushion - Text on Reverse</p>
+      <p>
+        WCNR03 | <%= number_to_currency(50, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure class="uploaded">
+    <%= link_to(image_path("116/Baby_Boy_Cushion_-_BBCN01.jpg")) do %>
+      <%= image_tag("116/thumb_Baby_Boy_Cushion_-_BBCN01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Baby Boy Cushion</p>
+      <p>
+        BBCN01 | <%= number_to_currency(50, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure class="uploaded">
+    <%= link_to(image_path("117/Baby_Girl_Cushion_-_BGCN01.jpg")) do %>
+      <%= image_tag("117/thumb_Baby_Girl_Cushion_-_BGCN01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Baby Girl Cushion</p>
+      <p>
+        BGCN01 | <%= number_to_currency(50, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure class="uploaded">
+    <%= link_to(image_path("118/Baby_Girl_Cushion_3_BGCN03.jpg")) do %>
+      <%= image_tag("118/thumb_Baby_Girl_Cushion_3_BGCN03.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Baby Girl Cushion</p>
+      <p>
+        BGCN03 | <%= number_to_currency(50, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure class="uploaded">
+    <%= link_to(image_path("119/Baby_Girl_Cushion_4_BGCN04.jpg")) do %>
+      <%= image_tag("119/thumb_Baby_Girl_Cushion_4_BGCN04.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Baby Girl Cushion</p>
+      <p>
+        BGCN04 | <%= number_to_currency(50, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure class="uploaded">
+    <%= link_to(image_path("120/Baby_Girl_Yorkshire_Cushion_5_BGCN05.jpg")) do %>
+      <%= image_tag("120/thumb_Baby_Girl_Yorkshire_Cushion_5_BGCN05.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Baby Girl Cushion</p>
+      <p>
+        BGCN05 | <%= number_to_currency(50, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure class="uploaded">
+    <%= link_to(image_path("121/Christening_Cushion_1_CCN01.jpg")) do %>
+      <%= image_tag("121/thumb_Christening_Cushion_1_CCN01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Christening Cushion</p>
+      <p>
+        CCN01 | <%= number_to_currency(50, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure class="uploaded">
+    <%= link_to(image_path("122/Postcard_Cushion_1_PCCN01.jpg")) do %>
+      <%= image_tag("122/thumb_Postcard_Cushion_1_PCCN01.jpg") %>
+    <% end %>
+    <figcaption>
+      <p>Postcard Cushion</p>
+      <p>
+        PCCN01 | <%= number_to_currency(50, unit: "£") %>
+      </p>
+    </figcaption>
+  </figure>
+  
+  <footer></footer>
+
 </section>
